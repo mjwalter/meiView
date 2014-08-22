@@ -249,14 +249,14 @@ meiView.Inherit(meiView.CompactUI, meiView.UI, {
       var main_canvas_div_height = $(maindiv).find('.main-canvas-div').height();
       canvas_container_width = view_main_width * (1 - this.options.sidebar_ratio);
       if ($(maindiv).find('.sidebar').css('display') === 'none') {
-        canvas_container_width = view_main_width;
+        canvas_container_width = view_main_width - 18;
       }
       var canvas_container_height = main_canvas_div_height;
       var clef_canvas_height = main_canvas_div_height;
       var sidebar_width = view_main_width - canvas_container_width;
       var sidebar_height = main_canvas_div_height;
       var clef_canvas_div_width = $(maindiv).find('.clef-canvas-div').width();
-      var main_canvas_div_width = canvas_container_width - clef_canvas_div_width;
+      var main_canvas_div_width = canvas_container_width - clef_canvas_div_width + 18;
       var pagination_heigh = (this.paginationOn()) ? $(maindiv).find('.pagination-div').height() : 0;
       var critrep_heigh = (this.critRepOn()) ? $(maindiv).find('.critrep-div').height() : 0;
       var main_area_height = main_canvas_div_height + 2 * pagination_heigh + critrep_heigh;
