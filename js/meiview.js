@@ -40,6 +40,12 @@ meiView.VarTypeList = {
         'el': 'rdg',
         'parent': 'app',
       },
+  'blank':
+      { 'title': null,
+        'attr': null,
+        'el': 'rdg',
+        'parent': 'app',
+      },
 }
 
 meiView.Util = {};
@@ -65,18 +71,6 @@ meiView.SelectedSuppliedPartList = function(type_name) {
 meiView.SelectedSuppliedPartList.prototype.init = function (type_name){
   this.origins = {};
   this.var_type = type_name;
-}
-
-meiView.SelectedSuppliedPartList.prototype.addOrigin = function(origin) {
-  if (this.origins[origin]) {
-    this.origins[origin] = true;
-  }
-}
-
-meiView.SelectedSuppliedPartList.prototype.removeOrigin = function(origin) {
-  if (!this.origins[origin]) {
-    this.origins[origin] = false;
-  }
 }
 
 meiView.SelectedSuppliedPartList.prototype.toggleSuppliedPart = function(origin) {
@@ -172,20 +166,27 @@ meiView.Viewer.prototype.createSuppliedPartList = function(var_type) {
   var attr = (meiView.VarTypeList[var_type])['attr'];
   var el = (meiView.VarTypeList[var_type])['el'];
   var result = {};
-  var origins = $(this.MEI.rich_head).find('fileDesc').find(title);
   var me = this;
-  $(origins).each(function(i) {
-    var orig_id = $(this).attr('xml:id');
-    if (!orig_id) {
-      throw ("Origin ID is undefined");
+
+  if (attr) {
+    var origins = $(this.MEI.rich_head).find('fileDesc').find(title);
+    $(origins).each(function(i) {
+      var orig_id = $(this).attr('xml:id');
+      if (!orig_id) {
+        throw ("Origin ID is undefined");
+      }
+      if ($(me.MEI.rich_score).find(el + '[' + attr + '="#' + orig_id + '"]').length > 0) {
+        result[orig_id] = this;
+      }
+    });
+  }
+  else {
+    if ($(me.MEI.rich_score).find(el + '[type="' + var_type + '"]').length > 0) {
+      result[var_type] = var_type;
     }
-    if ($(me.MEI.rich_score).find(el + '[' + attr + '="#' + orig_id + '"]').length > 0) {
-      result[orig_id] = this;
-    }
-  });
+  }
   return result;
 }
-
 
 meiView.Viewer.prototype.createSourceList = function(Apps) {
   this.Sources = {};
@@ -383,7 +384,12 @@ meiView.Viewer.prototype.selectSuppliedParts = function() {
       for (i=0; i<all_apps.length; i++) {
         var app = all_apps[i];
         var app_xml_id=$(app).attr('xml:id');
-        var rdgs = $(app).find(el + '[' + attr + '="#'+originID+'"]');
+        if (attr) {
+          var rdgs = $(app).find(el + '[' + attr + '="#'+originID+'"]');
+        }
+        else {
+          var rdgs = $(app).find(el + '[type' + '="'+originID+'"]');
+        }
         var j;
         for (j=0; j<rdgs.length; j++) {
           var rdg_xml_id = $(rdgs[j]).attr('xml:id');
