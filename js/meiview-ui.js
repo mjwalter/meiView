@@ -225,8 +225,11 @@ meiView.UI.prototype.fillSideBar = function(sidebardiv, sidebar_class) {
           onclick="meiView.UI.callback(\'' + 
           this.viewer.id + '-ui\', \'onSuppliedPartClick\', { ' +
           'originID: \'' + originID + '\',' +
-          'var_type: \'' + var_type + '\',' +
-          '})">' + originID + '</li>');
+          'var_type: \'' + var_type + '\',' + '})">' + 
+          // Just a hack to make a better message than 'blank'
+          // for showing blank staves
+          (originID == 'blank' ? 'Show missing staves' : originID) +
+          '</li>');
     }
   }
 
