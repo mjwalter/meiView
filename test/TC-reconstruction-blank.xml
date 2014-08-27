@@ -7,7 +7,7 @@
 			<respStmt xml:id="m-091a730a-1709-4f2b-86b6-f5bc9aa6ea00">
 				<persName xml:id="m-e3661b0c-d5cd-4f51-bac9-d512252d3f08"/>
 			</respStmt>
-		<editor xml:id="A"/><editor xml:id="Komives"/></titleStmt>
+		<editor xml:id="A"/><editor xml:id="B"/><editor xml:id="Komives"/></titleStmt>
 		<pubStmt xml:id="m-a5f78e6a-b16a-483a-8fb7-399027331a65">
 			<availability xml:id="m-09a0abdc-6ad0-42bb-bedd-08ae8559c041">
 				<useRestrict xml:id="m-00bcc962-87a1-4663-a86a-97d2323be0a9">Copyright © </useRestrict>
@@ -47,8 +47,8 @@
 					<staffGrp xml:id="m-6ca0ee64-362b-4450-b83e-0b39aedb76f4">
 						<staffGrp xml:id="m-48e61411-1a88-4029-ba29-9f1aa883659e" n="1" symbol="bracket">
 							<staffDef xml:id="sd1" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="Superius" lines="5" n="1" meter.count="4" meter.unit="2"/>
-							<staffDef xml:id="sd2" label="Contratenor" n="2" meter.count="4" meter.unit="2"/>
-							<staffDef xml:id="sd3" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="Contratenor_Reconstruction" lines="5" n="3" meter.count="4" meter.unit="2"/>
+							<staffDef xml:id="sd3" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="Contratenor" lines="5" n="3" meter.count="4" meter.unit="2"/>
+							<staffDef xml:id="sd4" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="Contratenor_Reconstruction_B" lines="5" n="4" meter.count="4" meter.unit="2"/>
 							<staffDef xml:id="sd5" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="Tenor" lines="5" n="5" meter.count="4" meter.unit="2"/>
 							<staffDef xml:id="sd7" clef.line="4" clef.shape="F" key.mode="major" key.sig="0" label="Bassus" lines="5" n="7" meter.count="4" meter.unit="2"/>
 							</staffGrp>
@@ -65,17 +65,21 @@
 								<note xml:id="p1ccd5n1536v1b1s1" dur="2" dur.ges="512p" oct="5" pname="c"/>
 							</layer>
 						</staff>
-						<app xml:id="app-recon-01" n="2"><rdg xml:id="rdgB.app-recon-01" type="blank" n="4"><staff xml:id="m-9f4e2368-202c-4834-a5e6-b7cc5f03eb90" n="4">
-							<layer xml:id="m-002363e1-dab7-4558-bccc-951eac6b2278" n="1">
+						<app xml:id="app-recon-01" n="2"><rdg type="blank" xml:id="rdgA.app-recon-01" n="3"><staff xml:id="m-979cb084-c907-41fd-a97c-0eda70d42404" n="3">
+							<layer xml:id="m-906802d2-dbcb-414c-ba37-77fcef752a04" n="1">
 								<space dur="breve"/>
 							</layer>
 						</staff>
-						</rdg><rdg type="reconstruction" xml:id="rdgA.app-recon-01" n="3" resp="#A"><staff xml:id="m-979cb084-c907-41fd-a97c-0eda70d42404" n="3">
-							<layer xml:id="m-906802d2-dbcb-414c-ba37-77fcef752a04" n="1">
-								<note xml:id="p1ced4n0v1b1s3" dur="2" dur.ges="512p" oct="4" pname="e"/>
-								<note xml:id="p1ced4n512v1b1s3" dur="2" dur.ges="512p" oct="4" pname="e"/>
-								<note xml:id="p1ced4n1024v1b1s3" dur="2" dur.ges="512p" oct="4" pname="e"/>
-								<note xml:id="p1ced4n1536v1b1s3" dur="2" dur.ges="512p" oct="4" pname="e"/>
+						</rdg><rdg xml:id="rdgB.app-recon-01" type="reconstruction" n="4" resp="#B"><staff xml:id="m-9f4e2368-202c-4834-a5e6-b7cc5f03eb90" n="4">
+							<layer xml:id="m-002363e1-dab7-4558-bccc-951eac6b2278" n="1">
+								<note xml:id="p1ced4n0v1b1s4" dur="4" dur.ges="256p" oct="4" pname="e"/>
+								<note xml:id="p1cgd4n256v1b1s4" dur="4" dur.ges="256p" oct="4" pname="g"/>
+								<note xml:id="p1ced4n512v1b1s4" dur="4" dur.ges="256p" oct="4" pname="e"/>
+								<note xml:id="p1cgd4n768v1b1s4" dur="4" dur.ges="256p" oct="4" pname="g"/>
+								<note xml:id="p1ced4n1024v1b1s4" dur="4" dur.ges="256p" oct="4" pname="e"/>
+								<note xml:id="p1cgd4n1280v1b1s4" dur="4" dur.ges="256p" oct="4" pname="g"/>
+								<note xml:id="p1ced4n1536v1b1s4" dur="4" dur.ges="256p" oct="4" pname="e"/>
+								<note xml:id="p1cgd4n1792v1b1s4" dur="4" dur.ges="256p" oct="4" pname="g"/>
 							</layer>
 						</staff>
 						</rdg></app><staff xml:id="m-c7ca549d-4fdb-45e5-8118-d193f5246498" n="5">
@@ -106,17 +110,20 @@
 								<note xml:id="p1ccd5n1536v1b2s1" oct="5" pname="c" dur="breve" dur.ges="4096p"/>
 							</layer>
 						</staff>
-						<app xml:id="app-recon-02" n="2"><rdg xml:id="rdgB.app-recon-02" type="blank" n="4"><staff xml:id="m-522d2912-50e1-4491-a798-0c94c16c5f4d" n="4">
-							<layer xml:id="m-f6b6731f-d31d-4ec9-86ed-09529917d1c8" n="1">
+						<app xml:id="app-recon-02" type="supplied" n="2"><rdg type="blank" xml:id="rdgA.app-recon-02" n="3"><staff xml:id="m-09c8c732-6d3c-4ab1-898e-3567d80fb560" n="3">
+							<layer xml:id="m-0c069323-6cdd-4c18-95e2-5bdb1c7f6caa" n="1">
 								<space dur="breve"/>
 							</layer>
 						</staff>
-						</rdg><rdg type="reconstruction" xml:id="rdgA.app-recon-02" n="3" resp="#A"><staff xml:id="m-09c8c732-6d3c-4ab1-898e-3567d80fb560" n="3">
-							<layer xml:id="m-0c069323-6cdd-4c18-95e2-5bdb1c7f6caa" n="1">
-								<note xml:id="p1ced4n0v1b2s3" dur="2" dur.ges="512p" oct="4" pname="e"/>
-								<note xml:id="p1ced4n512v1b2s3" dur="2" dur.ges="512p" oct="4" pname="e"/>
-								<note xml:id="p1ced4n1024v1b2s3" dur="2" dur.ges="512p" oct="4" pname="e"/>
-								<note xml:id="p1ced4n1536v1b2s3" oct="4" pname="e" dur="breve" dur.ges="4096p"/>
+						</rdg><rdg xml:id="rdgB.app-recon-02" type="reconstruction" n="4" resp="#B"><staff xml:id="m-522d2912-50e1-4491-a798-0c94c16c5f4d" n="4">
+							<layer xml:id="m-f6b6731f-d31d-4ec9-86ed-09529917d1c8" n="1">
+								<note xml:id="p1ced4n0v1b2s4" dur="4" dur.ges="256p" oct="4" pname="e"/>
+								<note xml:id="p1cgd4n256v1b2s4" dur="4" dur.ges="256p" oct="4" pname="g"/>
+								<note xml:id="p1ced4n512v1b2s4" dur="4" dur.ges="256p" oct="4" pname="e"/>
+								<note xml:id="p1cgd4n768v1b2s4" dur="4" dur.ges="256p" oct="4" pname="g"/>
+								<note xml:id="p1ced4n1024v1b2s4" dur="4" dur.ges="256p" oct="4" pname="e"/>
+								<note xml:id="p1cgd4n1280v1b2s4" dur="4" dur.ges="256p" oct="4" pname="g"/>
+								<note xml:id="p1cgd4n1792v1b2s4" oct="4" pname="g" dur="breve" dur.ges="4096p"/>
 							</layer>
 						</staff>
 						</rdg></app><staff xml:id="m-f7e2c174-a653-4294-b9f5-34d57f7356e7" n="5">
