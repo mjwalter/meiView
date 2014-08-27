@@ -67,7 +67,7 @@
 						</staff>
 						<app xml:id="app-recon-01" n="2"><rdg type="blank" xml:id="rdgA.app-recon-01" n="3"><staff xml:id="m-979cb084-c907-41fd-a97c-0eda70d42404" n="3">
 							<layer xml:id="m-906802d2-dbcb-414c-ba37-77fcef752a04" n="1">
-								<space/>
+								<space dur="breve"/>
 							</layer>
 						</staff>
 						</rdg></app><staff xml:id="m-c7ca549d-4fdb-45e5-8118-d193f5246498" n="5">
@@ -100,7 +100,7 @@
 						</staff>
 						<app xml:id="app-recon-02" n="2"><rdg type="blank" xml:id="rdgA.app-recon-02" n="3"><staff xml:id="m-09c8c732-6d3c-4ab1-898e-3567d80fb560" n="3">
 							<layer xml:id="m-0c069323-6cdd-4c18-95e2-5bdb1c7f6caa" n="1">
-								<space/>
+								<space dur="breve"/>
 							</layer>
 						</staff>
 						</rdg></app><staff xml:id="m-f7e2c174-a653-4294-b9f5-34d57f7356e7" n="5">
