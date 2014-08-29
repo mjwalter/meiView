@@ -31,8 +31,8 @@
 					<staffGrp>
 						<staffGrp n="1" symbol="bracket">
 							<staffDef clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="Superius" lines="5" n="1"/>
-							<staffDef clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="Tenor" lines="5" n="5"/>
-							<staffDef clef.line="4" clef.shape="F" key.mode="major" key.sig="0" label="Bassus" lines="5" n="7"/>
+							<staffDef clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="Tenor" lines="5" n="3"/>
+							<staffDef clef.line="4" clef.shape="F" key.mode="major" key.sig="0" label="Bassus" lines="5" n="5"/>
 							</staffGrp>
 					</staffGrp>
 				</scoreDef>
@@ -47,9 +47,10 @@
 					<staffGrp xml:id="m-6ca0ee64-362b-4450-b83e-0b39aedb76f4">
 						<staffGrp xml:id="m-48e61411-1a88-4029-ba29-9f1aa883659e" n="1" symbol="bracket">
 							<staffDef xml:id="sd1" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="Superius" lines="5" n="1" meter.count="4" meter.unit="2"/>
-							<staffDef xml:id="sd3" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="Contratenor" lines="5" n="3" meter.count="4" meter.unit="2"/>
-							<staffDef xml:id="sd5" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="Tenor" lines="5" n="5" meter.count="4" meter.unit="2"/>
-							<staffDef xml:id="sd7" clef.line="4" clef.shape="F" key.mode="major" key.sig="0" label="Bassus" lines="5" n="7" meter.count="4" meter.unit="2"/>
+							<staffDef xml:id="sd3" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="Contratenor" lines="5" n="2" meter.count="4" meter.unit="2"/>
+							<staffDef xml:id="sd5" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="Tenor" lines="5" n="3" meter.count="4" meter.unit="2"/>
+							<staffDef xml:id="sd7" clef.line="4" clef.shape="F" key.mode="major" key.sig="0" label="Quintus" lines="5" n="4" meter.count="4" meter.unit="2"/>
+							<staffDef xml:id="sd7" clef.line="4" clef.shape="F" key.mode="major" key.sig="0" label="Bassus" lines="5" n="5" meter.count="4" meter.unit="2"/>
 							</staffGrp>
 					</staffGrp>
 				</scoreDef>
@@ -66,12 +67,12 @@
 						</staff>
 						<app xml:id="app-recon-01" n="2">
 							<rdg type="blank" xml:id="rdgA.app-recon-01" n="3">
-								<staff xml:id="m-979cb084-c907-41fd-a97c-0eda70d42404" n="3">
+								<staff xml:id="m-979cb084-c907-41fd-a97c-0eda70d42404" n="2">
 									<layer xml:id="m-906802d2-dbcb-414c-ba37-77fcef752a04" n="1"/>
 								</staff>
 							</rdg>
 						</app>
-						<staff xml:id="m-c7ca549d-4fdb-45e5-8118-d193f5246498" n="5">
+						<staff xml:id="m-c7ca549d-4fdb-45e5-8118-d193f5246498" n="3">
 							<layer xml:id="m-da0b8391-1dbb-487f-af23-1d55ee244275" n="1">
 								<note xml:id="p1ced3n0v1b1s5" dur="2" dur.ges="512p" oct="3" pname="e"/>
 								<choice xml:id="choice01"><sic xml:id="sic-choice01"><note xml:id="p1cfd3n512v1b1s5" dur="2" dur.ges="512p" oct="3" pname="f"/>
@@ -80,7 +81,14 @@
 								<note xml:id="p1ced3n1536v1b1s5" dur="2" dur.ges="512p" oct="3" pname="e"/>
 							</layer>
 						</staff>
-						<staff xml:id="m-01cd4a01-80a7-45ed-a645-2310e101ecb4" n="7">
+						<app xml:id="app-recon-01q" n="4">
+							<rdg type="blank" xml:id="rdgA.app-recon-01q" n="3">
+								<staff xml:id="m-979cb084-c907-41fd-a97c-0eda70d42404q" n="4">
+									<layer xml:id="m-906802d2-dbcb-414c-ba37-77fcef752a04q" n="1"/>
+								</staff>
+							</rdg>
+						</app>
+						<staff xml:id="m-01cd4a01-80a7-45ed-a645-2310e101ecb4" n="5">
 							<layer xml:id="m-48b2fb65-9710-465b-a99d-01d6520036ee" n="1">
 								<note xml:id="p1ccd3n0v1b1s7" dur="2" dur.ges="512p" oct="3" pname="c"/>
 								<note xml:id="p1ccd3n512v1b1s7" dur="2" dur.ges="512p" oct="3" pname="c"/>
@@ -107,12 +115,12 @@
 						</staff>
 						<app xml:id="app-recon-02" n="2">
 							<rdg type="blank" xml:id="rdgA.app-recon-02" n="3">
-								<staff xml:id="m-09c8c732-6d3c-4ab1-898e-3567d80fb560" n="3">
+								<staff xml:id="m-09c8c732-6d3c-4ab1-898e-3567d80fb560" n="2">
 									<layer xml:id="m-0c069323-6cdd-4c18-95e2-5bdb1c7f6caa" n="1"/>
 								</staff>
 							</rdg>
 						</app>
-						<staff xml:id="m-f7e2c174-a653-4294-b9f5-34d57f7356e7" n="5">
+						<staff xml:id="m-f7e2c174-a653-4294-b9f5-34d57f7356e7" n="3">
 							<layer xml:id="m-a37409f3-b62e-41c6-b4cc-ad32097306e0" n="1">
 								<note xml:id="p1ced3n0v1b2s5" dur="2" dur.ges="512p" oct="3" pname="e"/>
 								<note xml:id="p1cfd3n512v1b2s5" dur="2" dur.ges="512p" oct="3" pname="f"/>
@@ -120,15 +128,13 @@
 								<note xml:id="p1ced3n1536v1b2s5" oct="3" pname="e" dur="breve" dur.ges="4096p"/>
 							</layer>
 						</staff>
-						<staff xml:id="m-90bda29c-dff7-404f-98ec-462c8c316524" n="7">
-							<layer xml:id="m-79cdc975-d3c3-4834-9c6c-ba192e6bdda1" n="1">
-								<app xml:id="app-var-02"><lem xml:id="lem.app-var-02"><note xml:id="p1ccd3n0v1b2s7" dur="2" dur.ges="512p" oct="3" pname="c"/>
-								</lem><rdg type="variant" xml:id="rdg.app-var-02" source="#Source-A"><note xml:id="p1ccd4n0v1b2s8" color="rgba(255,0,0,1)" dur="2" dur.ges="512p" oct="4" pname="c"/>
-								</rdg></app><note xml:id="p1ccd3n512v1b2s7" dur="2" dur.ges="512p" oct="3" pname="c"/>
-								<note xml:id="p1ccd3n1024v1b2s7" dur="2" dur.ges="512p" oct="3" pname="c"/>
-								<note xml:id="p1ccd3n1536v1b2s7" oct="3" pname="c" dur="breve" dur.ges="4096p"/>
-							</layer>
-						</staff>
+						<app xml:id="app-recon-02q" n="4">
+							<rdg type="blank" xml:id="rdgA.app-recon-02q" n="3">
+								<staff xml:id="m-09c8c732-6d3c-4ab1-898e-3567d80fb560q" n="4">
+									<layer xml:id="m-0c069323-6cdd-4c18-95e2-5bdb1c7f6caaq" n="1"/>
+								</staff>
+							</rdg>
+						</app>
 						</measure>
 				</section>
         <annot plist="#app-recon-01 #app-recon-02" type="appGrp"/>
