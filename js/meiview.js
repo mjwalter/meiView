@@ -158,7 +158,7 @@ meiView.Viewer.prototype.init = function(options){
 
 meiView.Viewer.prototype.toggleSuppliedPart = function(var_type, origin) {
   this.selectedSuppliedPartLists[var_type].toggleSuppliedPart(origin);
-  this.selectSuppliedParts(var_type, this.selectedSuppliedPartLists);
+  this.selectSuppliedParts();
 }
 
 meiView.Viewer.prototype.createSuppliedPartList = function(var_type) {
@@ -370,7 +370,7 @@ meiView.Viewer.prototype.displayCurrentPage = function() {
 
 }
 
-meiView.Viewer.prototype.selectSuppliedParts = function() {
+meiView.Viewer.prototype.selectSuppliedParts = function(var_type) {
   var sectionplaneUpdate = {};
   for (var var_type in this.selectedSuppliedPartLists) {
     var attr = (meiView.VarTypeList[var_type])['attr'];
